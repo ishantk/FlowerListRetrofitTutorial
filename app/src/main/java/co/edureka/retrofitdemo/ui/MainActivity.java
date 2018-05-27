@@ -25,9 +25,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        flowersList = (ListView) findViewById(R.id.flowersList);
+        flowersList = findViewById(R.id.flowersList);
 
         FlowerService flowerService = new FlowerWebAdapter().getFlowerService();
+
         flowerService.getFlowerList("2", new Callback<FlowersCollection>() {
             @Override
             public void success(FlowersCollection flowersCollection, Response response) {

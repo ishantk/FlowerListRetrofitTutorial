@@ -8,6 +8,5 @@ import co.edureka.retrofitdemo.model.FlowersCollection;
 
 public interface FlowerService {
     @GET("/coGUFiJJmG")
-    void getFlowerList(@Query("indent") String indent,
-                       Callback<FlowersCollection> callback);
+    void getFlowerList(@Query("indent") String indent, Callback<FlowersCollection> callback);
 }
